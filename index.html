@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouncing Ball with Bricks</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Cosmic Brick Breaker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <canvas id="myCanvas"></canvas>
-	<div id = "notes" >
-		<h4>Click Anywhere on the Screen to Bounce !!!</h4>
-		<h3>If ball drops three times then game freezes !!!</h3>
-		<h4>PS. Refresh, if game freezes !!!</h4>
-	</div>
-	<script src="script.js"></script>
+    <div class="modal">
+        <div class="modal-content">
+            <h1>🚀 COSMIC BREAKER 🚀</h1>
+            <p>
+                ←→ Move | Click to Launch<br>
+                💥 Break Rainbow Bricks!<br>
+                ⚡ Collect Power-Ups!
+            </p>
+            <button class="start-btn">START PARTY!</button>
+        </div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <div class="game-stats">❤️: <span id="lives">3</span> | 🚀: <span id="speed">1x</span></div>
 </body>
 </html>
-
